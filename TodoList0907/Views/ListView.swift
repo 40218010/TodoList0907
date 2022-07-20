@@ -25,6 +25,7 @@ struct ListView: View {
                                 }
                             }
                     }
+
                     .onDelete(perform: listViewModel.deleteItem)
                     .onMove(perform: listViewModel.moveItem)
                 }
@@ -37,6 +38,10 @@ struct ListView: View {
                             trailing: NavigationLink("ADD",
                                                      destination: AddView()))
     }
+    
+//    func delete(at offsets: IndexSet) {
+//        listViewModel.items.remove(atOffsets: offsets)
+//    }
     
 
 }

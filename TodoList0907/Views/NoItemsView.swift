@@ -14,12 +14,14 @@ struct NoItemsView: View {
     var body: some View {
         ScrollView {
             VStack(spacing: 10.0) {
-                Text("OOPS!!! It's empty👻")
+                Text("OOPS!!! \n It's empty 👽")
                     .font(.title)
-                Text("You will never be happy if you continue to search for what happiness consists of. You will never live if you are looking for the meaning of life.")
-                Text("Albert Camus")
-                    .fontWeight(.semibold)
+                    .foregroundColor(.gray)
                     .padding(.bottom)
+//                Text("You will never be happy if you continue to search for what happiness consists of. You will never live if you are looking for the meaning of life.")
+//                Text("Albert Camus")
+//                    .fontWeight(.semibold)
+//                    .padding(.bottom)
                 
                 NavigationLink(
                     destination: AddView(),
